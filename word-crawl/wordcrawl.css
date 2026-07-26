@@ -64,10 +64,6 @@ button:active, button:focus, textarea:focus {
   text-align:right;
 }
 
-.center {
-  text-align:center;
-}
-
 /*about box and overlay*/
 
 #overlay {
