@@ -1,47 +1,35 @@
-/*http://paletton.com/#uid=7142w0kaC2RdcY3avkIffi6rmv-*/
+/* https://paletton.com/#uid=14A0u0kllllaFw0g0qFqFg0w0aF */
 
 :root {
-  --darkbrown: #17140F;
-  --tan: #A5956F;
-  --lightblue: #7D91A4;
-  --midblue: #4B5B6B;
-  --darkgrey: #0A0C0F;
-  --progress: #2264A3;
-  --inactive: #90744C
+  --primary: #522b72;
+  --primary-light: #704c8f;
+  --primary-lighter: #9376ac;
+  --primary-dark: #371356;
+  --primary-darker: #210439;
+  --text: rgba(255, 255, 255, 0.5);
+  --background: #202020;
 }
 
 body {
-  background-color: var(--darkbrown);
+  background-color: var(--background);
   font-family:Arial, Helvetica, sans-serif;
-  color: var(--tan);
+  color: var(--text);
 }
 
 h1 {
   text-align:center;
-  color: var(--lightblue);
+  color: var(--primary-lighter);
 }
 
 a {
-  color: var(--midblue);
+  color: var(--primary-light);
 }
 
 hr {
   width:70%;
-  background-color: var(--midblue);
+  background-color: var(--primary-light);
   height:1px;
   border:none;
-}
-
-button {
-  background-color: var(--tan);
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-  border:0px;
-  font-size:140%;
-  padding:10px;
-  border-radius:10px;
-  cursor:pointer;
 }
 
 #wrapper {
@@ -79,8 +67,8 @@ button:active, button:focus, textarea:focus {
 
 .modal {
   display:none;
-  background-color: var(--tan);
-  color: var(--darkbrown);
+  background-color: var(--primary-dark);
+  color: var(--text);
   position:fixed;
   width:60%;
   left: 50%;
@@ -93,7 +81,7 @@ button:active, button:focus, textarea:focus {
 
 .modal button {
   display: inline-block;
-  background-color: var(--midblue);
+  background-color: var(--primary-light);
   color: #fff;
   margin: 10px;
 }
@@ -110,8 +98,8 @@ button:active, button:focus, textarea:focus {
 }
 
 #progwrapper {
-  border:1px solid var(--darkgrey);
-  background-color: var(--tan);
+  border: 1px solid var(--primary-dark);
+  background-color: var(--primary-light);
   height:30px;
   margin-bottom:20px;
 }
@@ -119,7 +107,7 @@ button:active, button:focus, textarea:focus {
 #prog {
   width:0%;
   height:30px;
-  background-color: var(--progress);
+  background-color: var(--primary);
 }
 
 .invisible {
@@ -130,9 +118,9 @@ button:active, button:focus, textarea:focus {
 
 textarea {
   font-family:'courier new', monospace;
-  background-color: var(--tan);
-  color: var(--darkgrey);
-  border:1px solid var(--darkgrey);
+  background-color: var(--primary-lighter);
+  color: var(--primary-darker);
+  border: 1px solid var(--primary-darker);
   display:block;
   margin-left:auto;
   margin-right:auto;
@@ -145,11 +133,24 @@ textarea {
   width:100px;
   margin-left:auto;
   margin-right:auto;
-  background-color: var(--tan);
-  border:1px solid var(--darkgrey);
-  color: var(--darkgrey);
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-darker);
+  color: var(--primary-lighter);
   margin-bottom:15px;
   font-size:120%;
+}
+
+button {
+  color: var(--text);
+  background-color: var(--primary);
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  border:0px;
+  font-size:140%;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
 }
 
 #donebut {
@@ -157,12 +158,13 @@ textarea {
 }
 
 .inactivebut {
-  color: var(--inactive);
+  color: var(--primary-light);
+  background-color: var(--primary-lighter);
   cursor:not-allowed;
 }
 
 .activebut {
-  color: var(--darkgrey);
+  color: var(--primary-lighter);
 }
 
 @media screen and (max-width: 700px) {
