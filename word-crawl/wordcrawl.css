@@ -1,0 +1,176 @@
+/*http://paletton.com/#uid=7142w0kaC2RdcY3avkIffi6rmv-*/
+
+:root {
+  --darkbrown: #17140F;
+  --tan: #A5956F;
+  --lightblue: #7D91A4;
+  --midblue: #4B5B6B;
+  --darkgrey: #0A0C0F;
+  --progress: #2264A3;
+  --inactive: #90744C
+}
+
+body {
+  background-color: var(--darkbrown);
+  font-family:Arial, Helvetica, sans-serif;
+  color: var(--tan);
+}
+
+h1 {
+  text-align:center;
+  color: var(--lightblue);
+}
+
+a {
+  color: var(--midblue);
+}
+
+hr {
+  width:70%;
+  background-color: var(--midblue);
+  height:1px;
+  border:none;
+}
+
+button {
+  background-color: var(--tan);
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  border:0px;
+  font-size:140%;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+#wrapper {
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+form {
+  margin: 5px;
+}
+
+button:active, button:focus, textarea:focus {
+  outline: none;
+}
+
+/*alignment*/
+
+.right {
+  text-align:right;
+}
+
+.center {
+  text-align:center;
+}
+
+/*about box and overlay*/
+
+#overlay {
+  display:none;
+  background-color:rgba(0, 0, 0, 0.6);
+  width:100%;
+  height:100%;
+  z-index:10;
+  top:0;
+  left:0;
+  position:fixed;
+}
+
+.modal {
+  display:none;
+  background-color: var(--tan);
+  color: var(--darkbrown);
+  position:fixed;
+  width:60%;
+  left: 50%;
+  margin-left: -30%;
+  z-index:20;
+  padding: 0px 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.modal button {
+  display: inline-block;
+  background-color: var(--midblue);
+  color: #fff;
+  margin: 10px;
+}
+
+#close {
+  cursor:pointer;
+  font-size:140%;
+}
+
+/*progress bar etc*/
+
+#howmuch {
+  text-align:center;
+}
+
+#progwrapper {
+  border:1px solid var(--darkgrey);
+  background-color: var(--tan);
+  height:30px;
+  margin-bottom:20px;
+}
+
+#prog {
+  width:0%;
+  height:30px;
+  background-color: var(--progress);
+}
+
+.invisible {
+  display:none;
+}
+
+/*writing stuff*/
+
+textarea {
+  font-family:'courier new', monospace;
+  background-color: var(--tan);
+  color: var(--darkgrey);
+  border:1px solid var(--darkgrey);
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:15px;
+  width:100%;
+}
+
+#counter {
+  text-align:center;
+  width:100px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: var(--tan);
+  border:1px solid var(--darkgrey);
+  color: var(--darkgrey);
+  margin-bottom:15px;
+  font-size:120%;
+}
+
+#donebut {
+  margin-bottom:15px;
+}
+
+.inactivebut {
+  color: var(--inactive);
+  cursor:not-allowed;
+}
+
+.activebut {
+  color: var(--darkgrey);
+}
+
+@media screen and (max-width: 700px) {
+  #wrapper {
+    width:100%;
+  }
+}
